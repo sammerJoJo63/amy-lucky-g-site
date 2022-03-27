@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Oswald&display=swap');
+
+/*
+
+font-family: 'Fredoka One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+*/
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /*  */
+}
+
+.center {
+  text-align: center;
+}
+
+@-webkit-keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+header.contain-to-grid {
+  background: #fff !important;
+  -webkit-box-shadow: -5px 5px 15px 0px rgba(109,202,223,0.20);
+  box-shadow: -5px 5px 15px 0px rgba(109,202,223,0.20);
+  height: 100px;
+}
+
+header.contain-to-grid.home {
+  margin-bottom: .5px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+  padding-top: 100px;
+}
+
+.top-bar {
+  background: #fff !important;
+  z-index: 1;
+}
+
+.top-bar-section ul {
+  margin: 25px 0;
+}
+
+.top-bar-section ul li.menu-item {
+  text-align: center;
+  margin: 0 8px;
+  width: 135px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.top-bar-section ul li.menu-item a {
+  background: rgb(109,202,223) !important;
+  background: linear-gradient(0deg, rgba(109,202,223,1) 0%, rgba(160,160,255,1) 50%, rgba(0,212,255,1) 100%) !important;
+  font-family: 'Fredoka One', cursive;
+  font-size: 18px;
+  text-shadow: 2px 2px 5px #000;
+  border-radius: 25px 25px 25px 25px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.top-bar-section ul li.menu-item a:hover {
+  -webkit-animation-name: buzz-out-on-hover;
+  animation-name: buzz-out-on-hover;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.top-bar-section ul li {
+  background: transparent !important;
+}
+
+.top-bar-section ul li.divider {
+  display: none;
+}
+
+#content.contentSection {
+  border: none !important;
+}
+
+
+header#siteName {
+  background-image: url('../img/clouds.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 260px;
+}
+
+header#siteName .overlay {
+  background-color: rgba(106, 200, 220, 0.25);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  padding: 50px;
+}
+
+header#siteName h1.siteName {
+  color: #8F3A73;
+  font-size: 68px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  line-height: 72px;
+}
+
+header#siteName h2.siteName {
+  color: #134053;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.scallop-down{
+  height:70px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#86d7fd), color-stop(0.49, #86d7fd), color-stop(0.51, #FFFCDA), to(#FFFCDA));
+  background-size: 49px 100%;
+}
+
+.scallop-up{
+  height:25px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#86d7fd), color-stop(0.49, #86d7fd), color-stop(0.51, transparent), to(transparent));
+  -webkit-background-size: 49px 100%;
+  margin-top: -45px;
+}
+
+#homepage1, #homepage1 .row > div {
+  background-color: #86d7fd;
+  width: 100%;
+  height: auto;
+}
+
+/* #homepage1, #homepage2, #about-amy, */
+#homepage1 .row > div .entry-content,
+#homepage2 .row > div .entry-content,
+#about-amy .row > div .entry-content,
+#contact .row > div .entry-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.side {
+  width: 49%;
+}
+
+#homepage1 .side img {
+  width: 100%;
+  opacity: 0;
+  left: -250px;
+  position: relative;
+  transition: 1s;
+}
+
+#homepage1 .side img.inView,
+#homepage2 .side:nth-child(odd) img.inView {
+  left: 0;
+  opacity: 1;
+}
+
+#homepage2 .side:nth-child(even) img.inView,
+#about-amy .side:nth-child(even) img.inView,
+#contact .side img.inView {
+  right: 0;
+  opacity: 1;
+}
+
+#homepage2 .side img {
+  box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 50%);
+  border: 1px solid #1f1f1f;
+}
+
+#homepage2 .side:nth-child(odd) img {
+  opacity: 0;
+  left: -250px;
+  position: relative;
+  transition: 1s;
+}
+
+#homepage2 .side:nth-child(even) img,
+#about-amy .side:nth-child(even) img,
+#contact .side img {
+  opacity: 0;
+  right: -250px;
+  position: relative;
+  transition: 1s;
+}
+
+#contact .side img {
+  width: 90%;
+  margin-top: 15px;
+}
+
+h2 {
+  color: #6ACC52;
+  text-transform: uppercase;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 3px 1px 0px rgb(0 0 0 / 35%);
+  font-size: 41px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 34px;
+  line-height: 1.2;
+  color: #EAA056;
+}
+
+h4 {
+  color: #90307C;
+  font-family: 'Fredoka One', cursive;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+#about-amy {
+  background-image: url('../img/clouds.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  top: -25px;
+}
+
+#about-amy .pg3overlay {
+  background-color: rgba(106, 200, 220, 0.75);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+  padding: 50px;
+}
+
+#about-amy .pg3overlay .row #content.contentSection {
+  background: transparent;
+}
+
+#about-amy .side img {
+  width: 80%;
+  margin-top: 120px;
+}
+
+#about-amy .side:nth-child(even) p {
+  text-align: center;
+}
+
+#about-amy h2,
+#reviews h3,
+#homepage5 h3 {
+  color: #2D4D98;
+  text-transform: none;
+  margin-bottom: 25px;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 3px 1px 0px rgb(0 0 0 / 35%);
+  font-size: 41px;
+  line-height: 1.2;
+}
+
+#reviews h3 {
+  margin-bottom: 50px;
+}
+
+#homepage5 h3 {
+   color: #fffcda;
+}
+
+.scallop-down-hp3{
+  height:25px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(transparent), color-stop(0.49, transparent), color-stop(0.51, #e7ffe6), to(#e7ffe6));
+  background-size: 49px 100%;
+  position: relative;
+  z-index: 9999;
+  bottom: 50px
+}
+
+.scallop-up-hp3{
+  height:25px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(transparent), color-stop(0.49, transparent), color-stop(0.51, #FFFCDA), to(#FFFCDA));
+  -webkit-background-size: 49px 100%;
+  position: relative;
+  z-index: 99999;
+}
+
+.bio {
+  font-size: 17px;
+  line-height: 0.9em;
+  background-color: #E9CAFF;
+  padding: 6px 22px;
+  border-radius: 15px;
+  margin: 0px 0px 15px 0px;
+  display: inline-block;
+  font-family: 'Fredoka One', cursive;
+}
+
+#homepage2, #homepage2 .row > div {
+  background: #FFFCDA;
+}
+
+#reviews {
+  margin-top: -50px;
+}
+
+#reviews, #reviews .row > div {
+  background: #e7ffe6;
+}
+
+#homepage5 .row > div,
+#contact .row > div {
+  background: transparent;
+}
+
+.rpwwt-widget ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rpwwt-widget ul li {
+  width: calc((100%/3) - 50px);
+  margin-bottom: 25px;
+}
+
+#reviews .rpwwt-widget ul li {
+  height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  background-position: right;
+}
+
+/* #reviews .rpwwt-widget ul li:nth-child(1) {
+  background-image: url(../img/kid-reading-1.jpg);
+}
+
+#reviews .rpwwt-widget ul li:nth-child(2) {
+  background-image: url(../img/kid-reading-2.jpg);
+}
+
+#reviews .rpwwt-widget ul li:nth-child(3) {
+  background-image: url(../img/kid-reading-3.jpg);
+} */
+
+#reviews .rpwwt-widget ul li .rpwwt-post-excerpt {
+  height: auto;
+  background-color: rgba(84, 174, 210, 0.75);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Fredoka One', cursive;
+}
+
+#reviews .textwidget p,
+#homepage5 .textwidget p {
+  text-align: right;
+}
+
+.moreRevBtn {
+  padding: 15px;
+  background: #2d4d89;
+  color: #fff;
+  font-size: 16px;
+}
+
+.viewBlogBtn {
+  padding: 15px;
+  background: #fffcda;
+  color: #444444;
+  font-size: 16px;
+}
+
+.scallop-down-hp5{
+  height:25px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(transparent), color-stop(0.49, transparent), color-stop(0.51, #86d7fd), to(#86d7fd));
+  background-size: 49px 100%;
+  position: relative;
+  z-index: 9999;
+  bottom: 50px
+}
+
+.scallop-up-hp5{
+  height:25px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(transparent), color-stop(0.49, transparent), color-stop(0.51, #e7ffe6), to(#e7ffe6));
+  -webkit-background-size: 49px 100%;
+  position: relative;
+  z-index: 99999;
+}
+
+#homepage5 {
+  background-image: url('../img/sun_scene.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  top: -25px;
+}
+
+#homepage5 .pg5overlay {
+  background-color: rgba(155, 137, 251, 0.69);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+#rpwwt-recent-posts-widget-with-thumbnails-3 img {
+  max-width: 100% !important;
+}
+
+#homepage5 .rpwwt-widget ul {
+  position: relative;
+  padding: 0 !important;
+}
+
+#homepage5 .rpwwt-widget ul li {
+    display: block;
+    position: absolute;
+    background: #f4edff;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    float: left;
+    text-align: left;
+    width: 266px;
+    padding: 12px;
+}
+
+#contact {
+  background: #86d7fd;
+  margin-top: -50px;
+}
+
+#contact h2 {
+  color: #90307C;
+  font-family: 'Fredoka One', cursive;
+  font-size: 38px;
+  line-height: 1.2;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background: #90307c;
+  border: none;
+  color: #eaa056;
+  padding: 15px 30px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+  color: #444444;
+}
+
+.top-bar, ul.title-area {
+  height: 100px;
+}
+
+.top-bar.expanded ul.title-area {
+  background: #fff;
+}
+
+@media (max-width: 1035px) {
+  .top-bar-section ul li.menu-item {
+    width: 110px;
+  }
+
+  .top-bar-section ul li.menu-item a {
+    font-size: 14px;
+    padding: 0 10px !important;
+  }
+
+  .top-bar.expanded ul.right li.menu-item {
+    width: 100%;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  .top-bar.expanded ul.right li.menu-item a {
+    width: 50%;
+    padding: 15px 30px !important;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 885px) {
+  .top-bar-section ul li.menu-item {
+    width: 82px;
+  }
+
+  .top-bar-section ul li.menu-item a {
+    font-size: 10px;
+    padding: 0 7px !important;
+  }
+}
+
+@media (max-width: 774px) {
+  header#siteName {
+    height: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .side {
+    width: 100%;
+  }
+
+  #reviews h3,
+  #homepage5 h3,
+  #contact h2  {
+    margin-top: 50px;
+  }
+
+  #about-amy .side img {
+    margin-top: 25px;
+  }
+
+  #homepage1 .side {
+    margin-bottom: 30px;
+  }
+
+  #homepage1 .side:first-child {
+    border-bottom: 1px solid #444444;
+    padding: 30px 0;
+  }
+
+  .rpwwt-widget ul li {
+    width: 100%;
+  }
+
+  .moreRevBtn,
+  .viewBlogBtn {
+    margin-bottom: 50px;
+    display: inline-block;
+  }
+
+  #homepage5 .rpwwt-widget ul {
+    margin-left: 20px !important;
+  }
+
+  header#siteName h1.siteName {
+    font-size: 52px;
+    line-height: 55px;
+  }
+
+  header#siteName h2.siteName {
+    font-size: 18px;
+  }
+
+  header#siteName {
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  #homepage5 .rpwwt-widget ul li {
+    width: 200px;
+  }
+}
+
+@media (max-width: 458px) {
+  header#siteName h1.siteName {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  header#siteName h2.siteName {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  header#siteName {
+    height: 280px;
+  }
+}
+
+@media (max-width: 392px) {
+  header#siteName {
+    height: 320px;
+  }
+}
+
+.love-reverie span,
+.love-reverie span a {
+  font-size: 10px;
+}
+
+.love-reverie p span {
+  float: right;
+  text-align: right;
+}
+
+.love-reverie p:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.top-bar .toggle-topbar.menu-icon a span:after{
+  content: "MENU";
+  font-size: 15px;
+}
+
+.top-bar.expanded .toggle-topbar.menu-icon a span:after{
+  content: "  X  ";
+  font-size: 22px;
+  margin-right: 15px;
+}
